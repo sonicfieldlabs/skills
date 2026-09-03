@@ -1,0 +1,65 @@
+{
+  "bundleId": "44444444-4444-4444-8444-444444444444",
+  "revisionNumber": 1,
+  "createdAt": "2026-09-03T12:35:00Z",
+  "noteMarkdown": "Synthetic batch template. Replace every fixture value and do not integrate this example.",
+  "publicCredit": { "mode": "community" },
+  "preparedWith": [
+    { "kind": "tool", "name": "Sonic Field Collection Contributor", "version": "1.0.0" }
+  ],
+  "sources": [
+    {
+      "kind": "proposed",
+      "id": "contribution-source:synthetic-batch",
+      "sourceType": "fixture",
+      "title": "Synthetic batch source",
+      "url": "https://example.invalid/batch-source",
+      "reliability": "Synthetic validation material only.",
+      "rightsNote": "Project-owned fixture; not evidence about a real record.",
+      "syntheticFixture": true
+    }
+  ],
+  "targets": [
+    {
+      "targetId": "sfpeople:media:steim-youtube:example_record",
+      "changes": [
+        {
+          "changeId": "change:synthetic-batch-title",
+          "operation": "set_media_metadata",
+          "field": "display_title",
+          "proposedValue": "Synthetic batch title — do not integrate",
+          "certainty": "unknown",
+          "rationale": "Exercises a media change in a multi-target batch.",
+          "unresolvedQuestions": [],
+          "sourceRefs": [
+            {
+              "sourceId": "contribution-source:synthetic-batch",
+              "locator": "Synthetic fixture, media row",
+              "supports": ["display_title"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "targetId": "sfpeople:profile:example-contributor-target",
+      "changes": [
+        {
+          "changeId": "change:synthetic-batch-summary",
+          "operation": "set_entity_summary",
+          "proposedValue": "Synthetic profile summary — do not integrate.",
+          "certainty": "unknown",
+          "rationale": "Exercises an independently selectable profile change in the same batch.",
+          "unresolvedQuestions": ["Replace this fixture with reviewed evidence."],
+          "sourceRefs": [
+            {
+              "sourceId": "contribution-source:synthetic-batch",
+              "locator": "Synthetic fixture, profile row",
+              "supports": ["summary"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

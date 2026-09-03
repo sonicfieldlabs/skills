@@ -1,0 +1,88 @@
+{
+  "contract": "sonicfield-people-contribution-scope-kit",
+  "contractVersion": 1,
+  "generatedAt": "2026-09-03T12:00:00.000Z",
+  "scope": {
+    "kind": "collection",
+    "collectionId": "sfpeople:collection:steim-youtube",
+    "label": "Synthetic STEIM collection fixture",
+    "baseSnapshot": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "peopleCommit": "dddddddddddddddddddddddddddddddddddddddd",
+    "authorityRevision": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "eligibleTargetCount": 2,
+    "scopeTargetCount": 3
+  },
+  "bundle": {
+    "contract": "sonicfield-people-contribution-bundle",
+    "contractVersion": 1,
+    "formats": ["json", "csv"]
+  },
+  "allowedOperations": {
+    "media": [
+      "set_media_metadata",
+      "upsert_media_relation",
+      "resolve_unidentified_occurrence",
+      "propose_draft_authority",
+      "supersede_claim",
+      "dispute_claim"
+    ],
+    "profile": [
+      "set_profile_biography",
+      "set_profile_display_name",
+      "upsert_profile_link",
+      "add_profile_alias",
+      "remove_profile_alias",
+      "set_entity_summary",
+      "set_entity_terms",
+      "set_external_identifiers",
+      "add_profile_identity_claim",
+      "propose_profile_portrait",
+      "supersede_claim",
+      "dispute_claim"
+    ]
+  },
+  "limits": {
+    "importBytes": 1048576,
+    "targetsPerBundle": 50,
+    "changesPerBundle": 250,
+    "sourcesPerBundle": 100,
+    "revisionsPerWorkspace": 10,
+    "sourceIndexEntries": 200,
+    "scopeKitBytes": 2097152
+  },
+  "validator": {
+    "package": "@all/account-contract",
+    "release": "0.1.0",
+    "bundleSchema": "PeopleContributionBundleSchema",
+    "scopeKitSchema": "ContributionScopeKitSchema"
+  },
+  "sourceIndex": {
+    "total": 0,
+    "included": 0,
+    "truncated": false
+  },
+  "sources": [],
+  "targets": [
+    {
+      "targetId": "sfpeople:media:steim-youtube:example_record",
+      "targetType": "media",
+      "label": "Synthetic collection record",
+      "href": "/people/collections/steim?item=example#selected-record",
+      "summary": "Synthetic fixture; not a real record",
+      "baseRevision": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "targetId": "sfpeople:profile:example-contributor-target",
+      "targetType": "profile",
+      "label": "Synthetic profile",
+      "href": "/people/example-contributor-target",
+      "summary": "Synthetic fixture; not a real person",
+      "baseRevision": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    }
+  ],
+  "integrity": {
+    "algorithm": "sha256",
+    "digest": "sha256:a5a2711f0c01c1e0908c62bf859ecfc566bc166da18e755604ec614d841701c2",
+    "covers": "canonical-json-excluding-integrity"
+  }
+}

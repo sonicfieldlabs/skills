@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sonic Field Collection Contributor"
+  short_description: "Prepare source-backed collection contributions"
+  default_prompt: "Use $sonic-field-collection-contributor to prepare and validate a scoped Sonic Field contribution bundle."
+policy:
+  allow_implicit_invocation: true
