@@ -5,7 +5,7 @@ Portable agent skills for [Sonic Field](https://sonicfield.org). Each of the thr
 | Skill | Use | Requirements |
 | --- | --- | --- |
 | [Collection Contributor](sonic-field-collection-contributor/) | Research and validate source-backed individual or batch contribution proposals for a human to review and import. | Node.js 22+, a current authenticated scope kit, and a human contributor. |
-| [Sonic Field Discovery](sonic-field-discovery/) | Search and inspect public Journal, Lexicon, Library, and People records, with citations and bounded Lexicon references. | An agent with a remote Streamable HTTP MCP client and network access. No account or API key. |
+| [Sonic Field Discovery](sonic-field-discovery/) | Search and inspect public Journal, Lexicon, Library, and People records, and on request Tools, Links, Works, Radar reviews, and Calendar, with citations and bounded Lexicon references. | An agent with a remote Streamable HTTP MCP client and network access. No account or API key. |
 | [Audio-Vision Puzzle Suite](av-puzzle-suite/) | Guess sounds from spectrograms, compose SVG spectrograms, or compose spectrograms with an image model. | Image inspection for `/soundguess`, text/file output for `/spectrasvg`, and an image model for `/spectraimg`. |
 
 ## Install
@@ -35,7 +35,7 @@ This is the same public Discovery service used by the Sonic Field GPT integratio
 
 ## Versions and maintenance
 
-The contributor skill follows Sonic Field's v1 contribution contract. Its bundled validator and fixtures are synchronized with the site's canonical contributor skill; a current scope kit identifies the contract release it requires. The portable Discovery skill targets the public Discovery 0.4.2 service. Audio-Vision Puzzle Suite 0.4.0 contains two puzzles exposed through three commands: `/soundguess`, `/spectrasvg`, and `/spectraimg`. Acoustic-scene exercises are separate and are not part of this suite.
+The contributor skill follows Sonic Field's v1 contribution contract. Its bundled validator and fixtures are synchronized with the site's canonical contributor skill; a current scope kit identifies the contract release it requires. The portable Discovery skill targets the public Discovery 0.6.0 service. Audio-Vision Puzzle Suite 0.4.0 contains two puzzles exposed through three commands: `/soundguess`, `/spectrasvg`, and `/spectraimg`. Acoustic-scene exercises are separate and are not part of this suite.
 
 To check the contributor package without accounts or network requests:
 

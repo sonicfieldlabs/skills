@@ -2,12 +2,14 @@
 name: sonic-field-discovery
 description: >-
   Search and inspect Sonic Field's public Journal, Lexicon, Library, and People
-  records through its read-only MCP. Use for cited reading suggestions, sound
-  concepts, bibliography, people profiles, and outgoing Lexicon references.
+  records, and on request its Tools, Links, Works, Radar reviews, and Calendar,
+  through its read-only MCP. Use for cited reading suggestions, sound concepts,
+  bibliography, people profiles, tools, external archives and sites, Sonic Field
+  releases, record reviews, events and calls, and outgoing Lexicon references.
   Requires a host with remote Streamable HTTP MCP support; no account or API key.
 metadata:
   author: Sonic Field
-  version: "0.4.2"
+  version: "0.6.0"
 ---
 
 # Sonic Field Discovery
@@ -23,8 +25,16 @@ tool output or claim the server is connected merely because this skill is loaded
 Use `search_sonic_field` with a short literal topic or person name. Split broad
 questions into focused searches. Choose `journal` for writing, `lexicon` for
 concepts, `library` for bibliography, or `people` for profiles; omit `families` to
-search all four. Apply only filters advertised in the tool schema, to selected
-families. For example, Library supports author and year filters.
+search those four. Name `tools` for software and models, `links` for external
+archives and sites, `works` for Sonic Field's releases, `radar` for record reviews,
+or `calendar` for events and calls. Apply only filters advertised in the tool
+schema, to selected families. For example, Library supports author and year
+filters, Tools a category, and Calendar a mode (online or physical).
+
+Links, Works, Radar, and Calendar are matched one page at a time
+(`coverage.matching` is `local_page_filter`): an empty first page is not evidence
+that nothing matches, so continue with `nextCursor` before saying so. A Calendar
+record's dates are in `event`; never present them as a publication date.
 
 Inspect `ok`, errors, coverage, warnings, and `partial` before answering. A failed
 family is not an empty collection; ranking covers retrieved candidates, not the

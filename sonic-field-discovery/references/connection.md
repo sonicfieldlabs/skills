@@ -14,12 +14,12 @@ not a browser page, a legacy SSE endpoint, or an OpenAI-only plugin URL.
 
 ## Confirm the connection
 
-After connecting, inspect the tool list. Public Discovery 0.4.2 provides four
+After connecting, inspect the tool list. Public Discovery 0.6.0 provides four
 read-only tools:
 
 | Tool | Purpose |
 | --- | --- |
-| `search_sonic_field` | Search public Journal, Lexicon, Library, and People records. |
+| `search_sonic_field` | Search public Journal, Lexicon, Library, and People records, and when named, Tools, Links, Works, Radar, and Calendar. |
 | `get_sonic_field_record` | Read a selected record's bounded public detail and provenance. |
 | `get_sonic_field_relations` | Follow resolved outgoing `links-to` references from a Lexicon entry. |
 | `show_sonic_field_results` | Revalidate and display up to five selected records in an optional MCP Apps view. |
