@@ -1,0 +1,22 @@
+# Security-sensitive automation, dependency and release files belong to the repository owner.
+/.github/ @emeisazam
+**/package.json @emeisazam
+**/package-lock.json @emeisazam
+**/pnpm-lock.yaml @emeisazam
+**/pnpm-workspace.yaml @emeisazam
+**/pyproject.toml @emeisazam
+**/uv.lock @emeisazam
+**/requirements*.txt @emeisazam
+**/Cargo.toml @emeisazam
+**/Cargo.lock @emeisazam
+**/build.gradle* @emeisazam
+**/libs.versions.toml @emeisazam
+/gradle/ @emeisazam
+**/composer.json @emeisazam
+**/composer.lock @emeisazam
+**/go.mod @emeisazam
+**/go.sum @emeisazam
+**/Gemfile* @emeisazam
+**/Dockerfile* @emeisazam
+**/wrangler.* @emeisazam
+/scripts/*release* @emeisazam
