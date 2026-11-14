@@ -44,3 +44,7 @@ node sonic-field-collection-contributor/evals/run-evals.mjs
 ```
 
 Contributions and corrections are welcome through GitHub issues or pull requests. Do not include private scope kits, credentials, personal account data, or unlicensed source material.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
